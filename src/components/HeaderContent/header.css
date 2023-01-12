@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.headercontainer {
+    width: 100%;
+    height: 15vh;
+    background: rgb(4, 94, 211);
+}
+
+.navbar {
+    background: #000;
+    display: flex;
+    justify-content: space-around;
+}
+
+.link{
+    text-decoration: none;
+    color: #fff;
+    margin: 10px;
+}

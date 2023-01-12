@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.gridcontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 90vh;
+}
+
+
+.second-navbar button:hover {
+    background-color: #fff;
+    color: #02aaf8;
+    border: 1px solid #02aaf8;
+}
+
+.grid {
+    background-color: #fff;
+    overflow-x: scroll;
+    width: 80vw;
+    height: 85vh;
+    box-shadow: 1px 1px 10px #000;
+    margin-left: 6rem;
+}
+
+table {
+    width: 200%;
+    max-width: 400%;
+    text-align: center;
+}
+
+th{
+    padding: 3px;
+}
+
+td {
+    border: 1px solid rgba(1, 147, 245, 0.63);
+    overflow-x: auto;
+}
+
+.grid::-webkit-scrollbar {
+    width: 10px;
+    background-color: #F5F5F5;
+  }
+  
+  .grid::-webkit-scrollbar-thumb {
+    background-color: #02aaf8;
+    border-radius: 10px;
+  }
+
+.saveModal{
+    float: right;
+    padding: 8px;
+    background-color: #02f82b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+.closeModal{
+    float: right;
+    padding: 16px;
+    background-color: #f80202;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+.closeModal:hover{
+    background: #fff;
+    color: #f80202;
+    border: 1px solid #f80202;
+}
+
+.saveModal:hover{
+    background: #fff;
+    color: #02f82b;
+    border: 1px solid #02f82b;
+}
+
+.content-modal {
+    display: flex;
+    flex-flow: column;
+}
+.content-modal input {
+    display: block;
+    width: 30rem;
+}
+
+.modal-button:hover {
+    background-color: #fff;
+    color: #0244f8;
+}
+
+.btns {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.btns button {
+    margin: 10px;
+}
+
+.del, .edit {
+    margin-left: 20px;
+}
+
+.del:hover {
+    color: #f80202;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.edit:hover {
+    color: #0244f8;
+    cursor: pointer;
+    margin-left: 20px; 
+}
