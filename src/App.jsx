@@ -1,6 +1,5 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Login from "./pages/LoginPage/login";
 import Home from "./pages/HomePage/Home";
 import CadastroAlunos from "./pages/cadastros/alunos";
 import CadastroProfessores from "./pages/cadastros/professores";
@@ -13,7 +12,6 @@ function App() {
       <Router>
         <Routes>
           <Route exact path="/" element={<Home />} />
-          <Route path="/login" element={<Login />} />
           <Route path="/cadastros" element={<CadastroAlunos />} />
           <Route path="/cadastros/alunos" element={<CadastroAlunos />} />
           <Route
