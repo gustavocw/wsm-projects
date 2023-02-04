@@ -1,13 +1,13 @@
 import React from "react";
 import CadastroLayout from "../../../components/CadastrosLayout";
-import ListaAlunos from "./Lista";
+import ListaShips from "./Lista";
 
-function CadastroAlunos() {
+function CadastroShips() {
   return (
     <CadastroLayout>
-      <ListaAlunos />
+      <ListaShips />
     </CadastroLayout>
   );
 }
 
-export default CadastroAlunos;
+export default CadastroShips;

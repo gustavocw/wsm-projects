@@ -18,28 +18,38 @@
     background-color: #ffffff;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.493);
     color: #000;
-    padding: 20px;
+    padding: 5px;
     display: flex;
     flex-direction: column;
     line-height: 4rem;
   }
-  
-  .sidebar a {
+
+  a {
+    display: inline-flex;
+    align-items: center;
     text-decoration: none;
-    color: rgb(11, 102, 221);
-    text-align: center;
-    border-radius: 10px;
+    color: #000;
+    margin-left: 20px;
+    border-radius: 5px;
   }
+  
+  i {
+    margin-right: 0.5em;
+  }
+  
+  
+
   .sidebar a:hover {
     text-decoration: none;
     color: rgb(253, 253, 253);
     background-color: rgb(11, 102, 221);;
     transition: 0.5s;
+    margin-left: 2px;
   }
 
   .exit {
     color: #000 !important;
-    margin-top: 16rem;
+    margin-top: 7rem;
   }
 
   .exit:hover{
@@ -49,7 +59,7 @@
   }
 
   button {
-    padding: 10px;
+    padding: 8px;
     border: none;
     color: #f1f1f1;
     background-color: rgb(0, 102, 255);

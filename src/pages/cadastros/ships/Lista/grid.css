@@ -11,6 +11,7 @@
     align-items: center;
     width: 100vw;
     height: 90vh;
+    margin: 30px 0 0 60px;
 }
 
 
@@ -42,6 +43,13 @@ th{
 td {
     border: 1px solid rgba(1, 147, 245, 0.63);
     overflow-x: auto;
+}
+
+.editdel {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
 }
 
 .grid::-webkit-scrollbar {

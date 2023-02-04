@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const alunos = {
+const ships = {
   getAll: async () =>
     new Promise((resolve, reject) =>
       axios
@@ -8,17 +8,17 @@ const alunos = {
         .then((response) => resolve(response.data))
         .catch(reject)
     ),
-  add: async (aluno) =>
+  add: async (ship) =>
     Promise((resolve, reject) =>
       axios
-        .post(".../aluno", { body: aluno })
+        .post(".../ship", { body: ship })
         .then((response) => resolve(response.data))
         .catch(reject)
     ),
-  update: async (id, aluno) => {
+  update: async (id, ship) => {
     return new Promise((resolve, reject) =>
       axios
-        .put(`.../${id}`, { body: aluno })
+        .put(`.../${id}`, { body: ship })
         .then((response) => resolve(response.data))
         .catch(reject)
     );
@@ -32,4 +32,4 @@ const alunos = {
     ),
 };
 
-export default alunos;
+export default ships;

@@ -22,7 +22,7 @@ const ListaProfessores = () => {
 const getProfessores = async () => {
     //BUSCA AO BANCO DE DADOS
     try {
-      const res = await axios.get("http://localhost:8080/professores");
+      const res = await axios.get("http://185.27.134.10:3306/professores");
       setprofessores(
         res.data.sort((a, b) => (a.nome_completo > b.nome_completo ? 1 : -1))
       );
@@ -37,7 +37,7 @@ const getProfessores = async () => {
 
   const onDeleteProfessorFn = async (id) => {
     await axios //o ceeeerto msm seria vc fazer um modal de confirmação de exclusão
-      .delete("http://localhost:8080/professores/" + id)
+      .delete("http://185.27.134.10:3306/professores/" + id)
       .then(({ data }) => {
         const newArray = professores.filter((professor) => professor.id !== id);
 
